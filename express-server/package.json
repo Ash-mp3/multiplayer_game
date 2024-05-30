@@ -1,0 +1,23 @@
+{
+  "name": "multiplayer_game",
+  "version": "1.0.0",
+  "description": "Web based online multiplayer game using node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ash-mp3/multiplayer_game.git"
+  },
+  "author": "Ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ash-mp3/multiplayer_game/issues"
+  },
+  "homepage": "https://github.com/Ash-mp3/multiplayer_game#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
