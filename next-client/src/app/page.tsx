@@ -1,7 +1,12 @@
-import Game from "./components/Game";
+import GameCanvas from './components/pages/GameCanvas';
+import Context from './components/CtxContext';
+import { createContext, useContext, useState } from 'react';
 
 export default function Home() {
-  return (
-    <Game />
-  );
+    return (
+        <Context>
+            <div className="background"></div>
+            <GameCanvas />
+        </Context>
+    );
 }
