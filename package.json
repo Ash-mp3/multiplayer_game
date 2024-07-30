@@ -1,0 +1,17 @@
+{
+  "name": "multiplayer_game",
+  "version": "1.0.0",
+  "description": "Web based online multiplayer game using node.js",
+  "main": "index.js",
+  "dependencies": {
+    "undici-types": "^5.26.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd express-server && npm run dev & cd .. && cd next-client && npm run dev",
+    "start": "cd express-server && npm start & cd .. && cd next-client && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}

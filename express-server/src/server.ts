@@ -1,8 +1,17 @@
+import cors from 'cors'
+import userRoutes from './routes/user.routes.ts'
+
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const server = require('http').createServer(app);
+const io = require('socket.io')(server);
+const PORT = 8000;
 
-app.get("/", (_req, res) => {
+app.use(cors());
+
+app.use("/api", userRoutes);
+
+app.get("/", (req, res) => {
     res.send("Hello World!");
 })
 
